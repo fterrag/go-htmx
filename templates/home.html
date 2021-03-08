@@ -1,0 +1,17 @@
+{{ define "home" }}
+
+{{ if not .Partial }}
+{{ template "header" }}
+{{ end }}
+
+<div class="pt-md-5 pb-md-5 mx-auto text-center">
+    <h1 class="display-4">go-htmx</h1>
+    <p class="lead pb-md-5"><a href="https://github.com/fterrag/go-htmx">go-htmx</a> is an example web app built using <a href="https://golang.org">Go</a>, <a href="https://htmx.org/">htmx</a>, and <a href="https://getbootstrap.com/">Bootstrap</a>.</p>
+    <img src="https://golang.org/lib/godoc/images/home-gopher.png">
+</div>
+
+{{ if not .Partial }}
+{{ template "footer" }}
+{{ end }}
+
+{{ end }}
